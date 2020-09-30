@@ -1,0 +1,165 @@
+.pricing__section {
+  padding: 100px 0 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.pricing__container-card {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  height: 500px;
+  text-decoration: none;
+  border-radius: 9px;
+  color: #01205f;
+}
+
+.color-info {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  border-radius: 9px;
+  width: 100%;
+}
+.pitch {
+  background-color: #22e694;
+}
+.darkblue {
+  background-color: #2267e6;
+}
+.cyan {
+  background-color: #19d9e0;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #22e694;
+}
+.triangle-down-cyan {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #19d9e0;
+}
+.triangle-down-blue {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #2267e6;
+}
+.pricing__container-card:nth-child(2) {
+  transform: scale(1.05);
+}
+
+.pricing__container-card:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.pricing__container-card:nth-child(2) {
+  margin: 0 24px;
+}
+
+.pricing__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pricing__heading {
+  color: #01205f;
+  margin-bottom: 2em;
+}
+
+.pricing__container-cardInfo {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+
+  align-items: center;
+  color: #01205f;
+}
+
+.break-line {
+  padding: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #94c8f8;
+}
+
+.pricing__container-cardInfo h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.pricing__container-cardInfo h4 {
+  font-size: 40px;
+}
+
+.pricing__container-cardInfo p {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.pricing__container-features {
+  margin: 16px 0 32px;
+  list-style: none;
+}
+
+.pricing__container-features li {
+  margin-bottom: 10px;
+}
+
+.pricing__container-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .pricing__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pricing__container-card {
+    width: 90%;
+  }
+
+  .pricing__wrapper {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__container-card:nth-child(2) {
+    transform: scale(1);
+
+    margin: 24px;
+  }
+
+  .pricing__container-card:hover {
+    transform: none;
+  }
+}

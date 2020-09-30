@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import Home from "./components/pages/HomePage/Home";
+import Services from "./components/pages/Services/Services";
+import Products from "./components/pages/Products/Products";
+import SignUp from "./components/pages/SignUp/SignUp";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/pages/Footer.js/Footer";
 
 function App() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    // if not a hash link scroll to top
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    }
+    // else scroll to id
+    else {
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          console.log("asdasd");
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname]); // do this on route change
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/sign-up" component={SignUp} />
+      </Switch>
+    </>
   );
 }
 

@@ -1,0 +1,70 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #01205f;
+  color: white;
+}
+/* .wrapper {
+  margin: 2em; */
+.nav-as {
+  background-color: white;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+}
+.navbar-logo-as {
+  text-decoration: none;
+  color: #01205f;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-left: 1em;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+.flex-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+}
+label,
+input,
+button {
+  margin-top: 1em;
+}
+input {
+  width: 400px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+input:focus {
+  border-bottom: 1px solid rgb(238, 20, 20);
+  outline: none;
+  color: rgb(238, 20, 20);
+}
+label {
+  font-size: 2em;
+}
+button {
+  width: 100px;
+  height: 45px;
+  margin-top: 2em;
+  background-color: white;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(238, 20, 20);
+  color: white;
+}
