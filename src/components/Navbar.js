@@ -50,6 +50,11 @@ function Navbar() {
                       Home
                     </Scrollchor>
                   </li>
+     <li className="nav-item" onClick={closeMobileMenu}>
+                    <Scrollchor className="nav-links" to="#sec1">
+                      Projects
+                    </Scrollchor>
+                  </li>
                   <li className="nav-item" onClick={closeMobileMenu}>
                     <Scrollchor className="nav-links" to="#sec2">
                       About
