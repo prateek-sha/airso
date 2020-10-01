@@ -4,6 +4,7 @@ import Home from "./components/pages/HomePage/Home";
 import Services from "./components/pages/Services/Services";
 import Products from "./components/pages/Products/Products";
 import SignUp from "./components/pages/SignUp/SignUp";
+import {Fade} from "react-reveal";
 import {
   BrowserRouter as Router,
   Switch,
